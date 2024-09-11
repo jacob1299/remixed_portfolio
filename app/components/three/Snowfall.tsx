@@ -1,14 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { TextureLoader } from "three";
-import { useDarkMode } from "~/hooks/useDarkMode";
 import * as THREE from "three";
 
 const Snow: React.FC = () => {
   const particlesRef = useRef<THREE.Points>(null);
   const textureLoader = new TextureLoader();
   const texture = textureLoader.load("/snowflake.svg");
-  const { theme } = useDarkMode();
 
   const horizontalSpeeds = useRef<Float32Array>(
     new Float32Array(1000).map(() => (Math.random() - 0.7) * 0.2),

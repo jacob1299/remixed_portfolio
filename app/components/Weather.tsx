@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Snowfall from "~/components/three/Snowfall";
 
 export default function Weather() {
@@ -54,7 +54,7 @@ export default function Weather() {
       <p>
         "Mommy, can you change it back?" I asked. I was 4 years old. My Mom was
         confused. "Back to what?" she asked. "The colorful map!" I chirped. I
-        was hooked. Just like that, and I am not kidding... just like that, I
+        Just like that, and I am not kidding... just like that, I
         was hooked on the weather. I had seen a temperature gradient map that
         had somehow captured my attention for decades to come. Ever since that
         very moment, I have been enamored with the weather. Now, I call it
@@ -73,7 +73,7 @@ export default function Weather() {
       </p>
 
       <div className="container mx-auto py-12 px-6">
-        <h1 className="text-4xl font-bold mb-8 text-center">Weather Gallery</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Gallery of Awesomeness</h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {weatherImages.map((image, index) => (

@@ -1,4 +1,4 @@
-import Space from '~/components/three/Space';
+import Space from "~/components/three/Space";
 
 export default function AboutMe() {
   const images = [

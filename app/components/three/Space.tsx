@@ -1,4 +1,4 @@
-import React, { useRef, useState, Suspense } from "react";
+import React, { useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
@@ -53,7 +53,7 @@ type SpaceProps = {
   withEarth: boolean;
 };
 
-const Space: React.FC<SpaceProps> = ({withEarth}: SpaceProps) => {
+const Space: React.FC<SpaceProps> = ({ withEarth }: SpaceProps) => {
   return (
     <>
       <Canvas
@@ -85,9 +85,11 @@ const Space: React.FC<SpaceProps> = ({withEarth}: SpaceProps) => {
           fade
         />
 
-        {withEarth && <Suspense fallback={null}>
-          <RotatingEarth />
-        </Suspense>}
+        {withEarth && (
+          <Suspense fallback={null}>
+            <RotatingEarth />
+          </Suspense>
+        )}
 
         <OrbitControls enableZoom={false} />
       </Canvas>

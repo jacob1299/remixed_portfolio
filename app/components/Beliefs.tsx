@@ -1,11 +1,9 @@
 import Space from "./three/Space";
-import { useDarkMode } from "~/hooks/useDarkMode";
 
 export default function Beliefs() {
-  const { theme } = useDarkMode();
   return (
     <>
-      <Space withEarth/>
+      <Space withEarth />
       <ol className="list-decimal list-inside space-y-2">
         <li>Jesus died for your sins.</li>
         <li>He loves you, and wants to have a relationship with you.</li>

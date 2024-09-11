@@ -121,14 +121,14 @@ export default function UHaulToUtah() {
         companies will continue to foster environments where remote work can
         thrive, while other companies will fall by the wayside by requiring
         people to return to office. Don't get me wrong, there are some cases
-        where a company was in-person pre-covid, and was forced to pivot. However,
-        in companies where they require an RTO policy, the leadership should be
-        the first people back! As time goes on, the dust will likely settle on
-        this Covid-induced fiasco. So, take heart! Do some introspecting on your
-        personal communication skills, especially if you work from home. Make
-        sure to put yourself out there, communicate effectively and efficiently,
-        and check in on your fellow remote coworkers from time to time. You will
-        be glad you did.
+        where a company was in-person pre-covid, and was forced to pivot.
+        However, in companies where they require an RTO policy, the leadership
+        should be the first people back! As time goes on, the dust will likely
+        settle on this Covid-induced fiasco. So, take heart! Do some
+        introspecting on your personal communication skills, especially if you
+        work from home. Make sure to put yourself out there, communicate
+        effectively and efficiently, and check in on your fellow remote
+        coworkers from time to time. You will be glad you did.
       </p>
     </div>
   );
