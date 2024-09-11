@@ -14,7 +14,7 @@ export const meta: MetaFunction = () => ([
 export default function Beliefs() {
   return (
     <>
-      <Space withEarth />
+      <Space withEarth={false} />
       <ol className="list-decimal list-inside space-y-2">
         <li>Jesus died for your sins.</li>
         <li>He loves you, and wants to have a relationship with you.</li>

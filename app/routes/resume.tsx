@@ -47,7 +47,6 @@ export default function Resume() {
         </p>
       </div>
 
-      {/* Resume PDF Section */}
       <div className="w-full h-full flex-grow">
         <object
           className="w-full h-full"

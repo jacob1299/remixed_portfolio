@@ -5,16 +5,28 @@ export default function DarkModeToggle() {
   const { theme, toggleTheme } = useDarkMode();
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="ml-4 p-2 rounded-full bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-gray-200 flex items-center justify-center w-10 h-10"
-      aria-label="Toggle Dark Mode"
-    >
-      {theme === "light" ? (
-        <MoonIcon className="w-6 h-6" />
-      ) : (
-        <SunIcon className="w-6 h-6" />
-      )}
-    </button>
+    <label className="ml-4 inline-flex items-center cursor-pointer">
+      <input
+        type="checkbox"
+        checked={theme === "dark"}
+        onChange={toggleTheme}
+        className="sr-only"
+        aria-label="Toggle Dark Mode"
+      />
+      <div className="relative w-14 h-8 bg-gray-300 dark:bg-gray-500 rounded-full transition-colors duration-300">
+        {/* Sun and Moon Icons */}
+        <div
+          className={`absolute top-1 left-1 w-6 h-6 transform transition-transform duration-300 ${
+            theme === "dark" ? "translate-x-6" : "translate-x-0"
+          }`}
+        >
+          {theme === "dark" ? (
+            <SunIcon className="text-yellow-400" />
+          ) : (
+            <MoonIcon className="text-gray-800" />
+          )}
+        </div>
+      </div>
+    </label>
   );
 }
