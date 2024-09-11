@@ -1,6 +1,18 @@
 import { Link, useLoaderData } from "@remix-run/react";
 import { LoaderFunction } from "@remix-run/node";
 import { BlogPost, posts } from "../data/blogPosts";
+import { MetaFunction } from "@remix-run/node";
+
+
+export const meta: MetaFunction = () => ([
+  {
+    charset: "utf-8",
+    title: "Blog",
+    description: "This is where I put random things that I think about.",
+    viewport: "width=device-width,initial-scale=1",
+    keywords: "blog, writing, jacob badolato"
+  }
+]);
 
 export const loader: LoaderFunction = () => {
   return posts;

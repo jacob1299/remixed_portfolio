@@ -1,5 +1,16 @@
 import { useState } from "react";
 import Snowfall from "~/components/three/Snowfall";
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => ([
+  {
+    charset: "utf-8",
+    title: "Weather!!!",
+    description: "This is something I am deeply passionate about... The Weather",
+    viewport: "width=device-width,initial-scale=1",
+    keywords: "jacob badolato, weather, nerd, react, remix"
+  }
+]);
 
 export default function Weather() {
   const weatherImages = [

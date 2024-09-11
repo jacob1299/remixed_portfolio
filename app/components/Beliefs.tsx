@@ -1,4 +1,15 @@
 import Space from "./three/Space";
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => ([
+  {
+    charset: "utf-8",
+    title: "Beliefs",
+    description: "Core values",
+    viewport: "width=device-width,initial-scale=1",
+    keywords: "Jesus, God, Heaven, relationship, love, grace"
+  }
+]);
 
 export default function Beliefs() {
   return (

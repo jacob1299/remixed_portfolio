@@ -1,4 +1,15 @@
 import Space from "~/components/three/Space";
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => ([
+  {
+    charset: "utf-8",
+    title: "About Me",
+    description: "Hi. I am a software engineer who is passionate about learning. I am not really sure what I'm doing, but I am having fun doing it.",
+    viewport: "width=device-width,initial-scale=1",
+    keywords: "jacob badolato, software engineer, software developer, dev, react, typescript, java, sql, UT Austin"
+  }
+]);
 
 export default function AboutMe() {
   const images = [

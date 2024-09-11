@@ -1,3 +1,15 @@
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => ([
+  {
+    charset: "utf-8",
+    title: "Resume",
+    description: "My Resume",
+    viewport: "width=device-width,initial-scale=1",
+    keywords: "jacob badolato, software, engineer, developer, software engineer, software developer, react, typescript, html, css, tailwind, java, spring, sql, mysql, nlp, ai, deep learning, machine learning, UT Austin, gpa, years of experience"
+  }
+]);
+
 export default function Resume() {
   return (
     <div className="w-full h-screen flex flex-col">

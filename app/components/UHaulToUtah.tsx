@@ -1,3 +1,15 @@
+import { MetaFunction } from "@remix-run/node";
+
+export const meta: MetaFunction = () => ([
+  {
+    charset: "utf-8",
+    title: "UHaulToUtah",
+    description: "UHaul to Utah: Navigating the Roads of Work Culture Evolution",
+    viewport: "width=device-width,initial-scale=1",
+    keywords: "remote, office, hybrid, work culture"
+  }
+]);
+
 export default function UHaulToUtah() {
   return (
     <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
