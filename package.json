@@ -1,7 +1,6 @@
 {
   "name": "remixed_portfolio",
   "version": "1.0.0",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "remix dev",
